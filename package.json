@@ -27,13 +27,16 @@
   ],
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.12.3",
-    "@storybook/addon-actions": "^6.0.28",
-    "@storybook/addon-essentials": "^6.0.28",
-    "@storybook/addon-links": "^6.0.28",
-    "@storybook/addon-storysource": "^6.0.28",
-    "@storybook/vue": "^6.0.28",
-    "babel-loader": "^8.2.1",
-    "react-is": "^17.0.1"
+    "@babel/core": "^7.28.0",
+    "@storybook/addon-actions": "^9.0.8",
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/addon-links": "^9.0.17",
+    "@storybook/addon-storysource": "^8.6.14",
+    "@storybook/vue3": "^9.0.17",
+    "babel-loader": "^10.0.0",
+    "react-is": "^17.0.2"
+  },
+  "dependencies": {
+    "vue-virtual-scroller": "^2.0.0-beta.8"
   }
 }
