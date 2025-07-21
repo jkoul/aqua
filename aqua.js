@@ -54,9 +54,10 @@ import AquaTreeViewItem from './components/AquaTreeViewItem.vue'
 import AquaEditableLabel from './components/AquaEditableLabel.vue'
 import AquaCheckboxGroup from './components/AquaCheckboxGroup.vue'
 import AquaFlowLayout from './components/AquaFlowLayout.vue'
+import { getAquaColor } from './service/getAquaColor'
 
 const AquaComponentLibrary = {
-  install(Vue) {
+  install(Vue, options) {
     Vue.component(AquaLayout.name, AquaLayout)
     Vue.component(AquaFlex.name, AquaFlex)
     Vue.component(AquaSpacer.name, AquaSpacer)
@@ -114,6 +115,7 @@ const AquaComponentLibrary = {
     Vue.component('DynamicScroller', DynamicScroller)
     Vue.component('DynamicScrollerItem', DynamicScrollerItem)
     Vue.component('RecycleScroller', RecycleScroller)
+    Vue.config.globalProperties.getAquaColor = (colorName) => getAquaColor(colorName)
   }
 }
 
