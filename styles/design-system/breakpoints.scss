@@ -1,4 +1,5 @@
-@use '../../utilities/functions.scss' as *;
+@use '../utilities/functions.scss' as *;
+@use 'sass:map';
 
 $aqua-breakpoints: (
   'xs': 0,
@@ -7,3 +8,8 @@ $aqua-breakpoints: (
   'lg': toRem(1280),
   'xl': toRem(1920)
 );
+
+$aqua-breakpoint-sm: map.get($aqua-breakpoints, 'sm');
+$aqua-breakpoint-md: map.get($aqua-breakpoints, 'md');
+$aqua-breakpoint-lg: map.get($aqua-breakpoints, 'lg');
+$aqua-breakpoint-xl: map.get($aqua-breakpoints, 'xl');

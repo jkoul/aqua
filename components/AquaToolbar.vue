@@ -582,7 +582,7 @@ export default {
   height: 1.5rem !important;
   max-height: 2rem !important;
 
-  @media only screen and (max-width: $breakpoint-mobile) {
+  @media only screen and (max-width: $aqua-breakpoint-sm) {
     top: calc(50% - 9px);
   }
 }

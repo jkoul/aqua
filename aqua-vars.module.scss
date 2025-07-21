@@ -2,5 +2,5 @@
 @forward './styles/design-system/colors.module.scss';
 @forward './styles/design-system/spacing-vars.scss';
 @forward './styles/design-system/breakpoints.scss';
-@forward './utilities/functions.scss';
-
+@forward './styles/utilities/functions.scss';
+@forward './styles/utilities/mixins.scss';

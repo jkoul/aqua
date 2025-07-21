@@ -1,0 +1,19 @@
+@use '../design-system/colors.module.scss' as *;
+
+@mixin hoverUnderline() {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $aqua-color-coral-500;
+  transform-origin: bottom right;
+  transition: transform 0.15s ease-out;
+}
+
+@mixin hoverUnderlineAfter() {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
