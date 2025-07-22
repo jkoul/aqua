@@ -31,14 +31,14 @@ type MiscColors =
   | 'VividBlueHover'
   | 'VividBlueActive'
 
-type AquaColor = `aquaColor${`${Family}${Level}` | MiscColors}`
+type AquaColor = `${Family}${Level}` | MiscColors
 
 /**
  * Get a hex color from the design system
  *
  * @param colorName aqua color format only
  */
-export const getAquaColor = (colorName: AquaColor): string => colors[colorName]
+export const getAquaColor = (colorName: AquaColor): string => colors[`aquaColor${colorName}`]
 
 // an optional mixin wrapper, if you so choose. This is not included in the Aqua plugin, and instead can be imported and used directly. 
 export const AquaColors = {

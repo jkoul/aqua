@@ -115,7 +115,7 @@ const AquaComponentLibrary = {
     Vue.component('DynamicScroller', DynamicScroller)
     Vue.component('DynamicScrollerItem', DynamicScrollerItem)
     Vue.component('RecycleScroller', RecycleScroller)
-    Vue.config.globalProperties.getAquaColor = (colorName) => getAquaColor(colorName)
+    Vue.config.globalProperties.$getAquaColor = (colorName) => getAquaColor(colorName)
   }
 }
 
